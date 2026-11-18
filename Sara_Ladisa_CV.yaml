@@ -1,0 +1,148 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# CV in Dutch style: 1 page, reverse chronological order, factual, no photo,
+# no date of birth, a sober single-column layout that ATS systems can read.
+# Everything marked TODO needs filling in or checking.
+# Rule of thumb for bullets: action verb + what you did + result/number.
+
+cv:
+  name: Sara Ladisa
+  # Headline = who you are in one line + EU citizen (removes the work-permit question)
+  headline: MSc Digital Transformation Management student · EU citizen, no work permit required
+  location: Cesena, Italy            # TODO: when you move, write "Amsterdam, Netherlands"
+  email: saraladisa25@gmail.com              # TODO: professional email (name.surname@...)
+  phone: '+39 3513370572'          # TODO: your number, international format
+  social_networks:
+    - network: LinkedIn
+      username: sara-ladisa                 # TODO: the part after linkedin.com/in/
+    - network: GitHub
+      username: sara-ladisa
+
+  sections:
+    # ─────────────────────────────────────────────────────────────
+    # PROFILE: 2-3 lines, concrete. Rewrite it for each application.
+    profile:
+      - >-
+        Master's student in Digital Transformation Management with a background in
+        Management Engineering, working at the intersection of technology and business.
+        Hands-on experience building web applications with Python, Django, Vue and LLM APIs.
+        Looking for a TODO [graduate programme / role] in TODO [field] in the Netherlands.
+
+    # ─────────────────────────────────────────────────────────────
+    education:
+      - institution: University of Bologna
+        area: Digital Transformation Management
+        degree: MSc
+        location: Cesena, Italy
+        start_date: 2025-09            # TODO: check
+        end_date: 2027-07              # TODO: expected graduation date
+        # Descriptor: change it based on the job posting (the degree title stays the same)
+        summary: >-
+          Interdisciplinary programme combining software development, data and
+          cybersecurity with digital strategy and change management.
+        highlights:
+          - 'Relevant coursework: Cybersecurity, ML Privacy & Adversarial Robustness, TODO, TODO'
+          - 'Thesis (in progress): TODO, e.g. a digital twin / MLOps topic'
+          # - 'GPA: TODO/30' # only if it's good (≥ 27/30)
+
+      - institution: Polytechnic University of Bari
+        area: Management Engineering (Information Systems track)
+        degree: BSc
+        location: Bari, Italy
+        start_date: 2021-09            # TODO: check
+        end_date: 2025-07              # TODO: check
+        highlights:
+          - 'Final grade: 104/110'    # only if it's good; otherwise delete the line
+          - 'Thesis: The impact of Space Technologies on business models: a review from the literature.'
+
+    # ─────────────────────────────────────────────────────────────
+    experience:
+      - company: DMA
+        position: Software Development Intern (incoming)
+        location: Cesena, Italy
+        date: From Apr 2027
+        highlights:
+          - Curricular internship in the development team
+
+      - company: University of Bologna, Cesena Campus
+        position: Student Tutor
+        location: Cesena, Italy
+        start_date: 2025-10            # TODO: check
+        end_date: 2026-12              # TODO: end of the contract (after the Open Days)
+        highlights:
+          # TODO: add real numbers wherever you can (events, students, followers…)
+          - Organised and supported student events and campus activities (TODO events, TODO+ students)
+          - Managed content for the Cesena Campus official communication channels
+          - Represented the campus at Open Days, guiding prospective students
+
+    # ─────────────────────────────────────────────────────────────
+    # PROJECTS: your technical proof. Link to GitHub wherever you can.
+    projects:
+      - name: '[AI Exam Simulator](https://github.com/TODO)'
+        date: '2026'
+        summary: Python · Anthropic API
+        highlights:
+          - Built an exam-prep web app with multiple simulation modes and LLM-based evaluation of open answers
+          - Added persistent storage and optimised token usage to reduce API costs (TODO %)
+
+      - name: '[Group Web Application](https://github.com/TODO)'
+        date: '2026'
+        summary: FastAPI · PostgreSQL · HTMX
+        highlights:
+          - 'TODO: what the app does + your role on the team (e.g. backend, data model, API)'
+
+      - name: '[Weekly Meal Planner](https://github.com/TODO)'
+        date: '2026'
+        summary: React · AI recipe generation
+        highlights:
+          - Designed a personalised planner with meal swapping, shopping list and AI-generated recipes
+
+    # ─────────────────────────────────────────────────────────────
+    skills:
+      - label: Programming
+        details: Python, SQL, JavaScript/React (basic)       # TODO: check the levels
+      - label: Tools & Frameworks
+        details: FastAPI, PostgreSQL, Git, LLM APIs (Anthropic)
+      - label: Domains
+        details: Cybersecurity, ML privacy & robustness, Digital Transformation, Process Analysis
+      - label: Languages
+        details: Italian (native), English (TODO C1/C2), Dutch (TODO, e.g. A1, currently learning)
+
+    # Interests: one short, genuine line, common in Dutch CVs. Delete it if you don't want it.
+    interests:
+      - bullet: Vinyl record collecting, electronic music
+
+# ─────────────────────────────────────────────────────────────────
+design:
+  theme: classic
+  page:
+    size: a4                     # European standard (not US letter)
+    top_margin: 1.6cm
+    bottom_margin: 1.6cm
+    left_margin: 1.8cm
+    right_margin: 1.8cm
+    show_footer: false
+    show_top_note: false
+  colors:                        # sober: black + one discreet dark blue
+    body: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    headline: rgb(60, 60, 60)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(20, 50, 90)
+    links: rgb(20, 50, 90)
+  header:
+    connections:
+      show_icons: false          # cleaner and more ATS-friendly
+      display_urls_instead_of_usernames: true
+  sections:
+    show_time_spans_in: []
+
+locale:
+  language: english
+
+settings:
+  current_date: today
+  render_command:
+    dont_generate_html: true
+    dont_generate_markdown: true
+    dont_generate_png: true

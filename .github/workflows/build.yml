@@ -1,0 +1,28 @@
+name: Build CV
+
+on:
+  push:
+    branches: [main]
+    paths: ['*.yaml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install "rendercv[full]==2.8"
+      - run: rendercv render Sara_Ladisa_CV.yaml
+      - name: Publish PDF as "latest" release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest CV
+          files: rendercv_output/Sara_Ladisa_CV.pdf
+          make_latest: true

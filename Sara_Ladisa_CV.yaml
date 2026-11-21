@@ -8,7 +8,7 @@
 cv:
   name: Sara Ladisa
   # Headline = who you are in one line + EU citizen (removes the work-permit question)
-  headline: MSc Digital Transformation Management student · EU citizen, no work permit required
+  headline: MSc Computer Science - Digital Transformation Management student · EU citizen, no work permit required
   location: Cesena, Italy            # TODO: when you move, write "Amsterdam, Netherlands"
   email: saraladisa25@gmail.com              # TODO: professional email (name.surname@...)
   phone: '+39 3513370572'          # TODO: your number, international format
@@ -23,25 +23,25 @@ cv:
     # PROFILE: 2-3 lines, concrete. Rewrite it for each application.
     profile:
       - >-
-        Master's student in Digital Transformation Management with a background in
+        Master's student in Computer Science - Digital Transformation Management with a background in
         Management Engineering, working at the intersection of technology and business.
         Hands-on experience building web applications with Python, Django, Vue and LLM APIs.
-        Looking for a TODO [graduate programme / role] in TODO [field] in the Netherlands.
+        Looking for an Internship in [] in the Netherlands.
 
     # ─────────────────────────────────────────────────────────────
     education:
       - institution: University of Bologna
-        area: Digital Transformation Management
+        area: Computer Science 
         degree: MSc
         location: Cesena, Italy
         start_date: 2025-09            # TODO: check
         end_date: 2027-07              # TODO: expected graduation date
         # Descriptor: change it based on the job posting (the degree title stays the same)
         summary: >-
-          Interdisciplinary programme combining software development, data and
-          cybersecurity with digital strategy and change management.
+          Interdisciplinary programme combining Software Engineering, Data Analysis and
+          Machine Learning with digital strategy and change management.
         highlights:
-          - 'Relevant coursework: Cybersecurity, ML Privacy & Adversarial Robustness, TODO, TODO'
+          - 'Relevant coursework: Software Engineering, Cybersecurity, Machine Learning and Data Centric AI'
           - 'Thesis (in progress): TODO, e.g. a digital twin / MLOps topic'
           # - 'GPA: TODO/30' # only if it's good (≥ 27/30)
 
@@ -71,25 +71,27 @@ cv:
         end_date: 2026-12              # TODO: end of the contract (after the Open Days)
         highlights:
           # TODO: add real numbers wherever you can (events, students, followers…)
-          - Organised and supported student events and campus activities (TODO events, TODO+ students)
-          - Managed content for the Cesena Campus official communication channels
+          - Organised and supported student events and campus activities 
+          - Managed and created content for the Cesena Campus official communication channels
           - Represented the campus at Open Days, guiding prospective students
 
     # ─────────────────────────────────────────────────────────────
     # PROJECTS: your technical proof. Link to GitHub wherever you can.
     projects:
+
+      - name: '[Pronto](https://github.com/TODO)'
+        date: '2026'
+        summary: Django · PostgreSQL · Vue.js · Chroma · Docker · Poetry
+        highlights:
+          - Co-developed (team of 2) a web app that automates the university helpdesk
+          - Built backend in Django and Frontend in Vue, containerization with Docker, Test Driven Development (pytest, mypy, ruff, coverage) plus a CI/CD pipeline that automates build and release
+
       - name: '[AI Exam Simulator](https://github.com/TODO)'
         date: '2026'
         summary: Python · Anthropic API
         highlights:
           - Built an exam-prep web app with multiple simulation modes and LLM-based evaluation of open answers
           - Added persistent storage and optimised token usage to reduce API costs (TODO %)
-
-      - name: '[Group Web Application](https://github.com/TODO)'
-        date: '2026'
-        summary: FastAPI · PostgreSQL · HTMX
-        highlights:
-          - 'TODO: what the app does + your role on the team (e.g. backend, data model, API)'
 
       - name: '[Weekly Meal Planner](https://github.com/TODO)'
         date: '2026'
@@ -100,14 +102,14 @@ cv:
     # ─────────────────────────────────────────────────────────────
     skills:
       - label: Programming
-        details: Python, SQL, JavaScript/React (basic)       # TODO: check the levels
+        details: Python, SQL, Vue.js    # TODO: check the levels
       - label: Tools & Frameworks
-        details: FastAPI, PostgreSQL, Git, LLM APIs (Anthropic)
+        details: FastAPI, PostgreSQL, Git, LLM APIs, Docker , PowerBI , Microsoft Office, Google Workspace
       - label: Domains
-        details: Cybersecurity, ML privacy & robustness, Digital Transformation, Process Analysis
+        details: Software Engineering, Cybersecurity, ML, Digital Transformation
       - label: Languages
-        details: Italian (native), English (TODO C1/C2), Dutch (TODO, e.g. A1, currently learning)
-
+        details: Italian (native), English (C1)
+        
     # Interests: one short, genuine line, common in Dutch CVs. Delete it if you don't want it.
     interests:
       - bullet: Vinyl record collecting, electronic music
